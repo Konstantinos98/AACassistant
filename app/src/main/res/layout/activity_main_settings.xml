@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/gray"
+    tools:context=".MainSettings"
+    android:id="@+id/msLayout">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/msTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Main Settings"
+                android:padding="7dp"
+                android:textSize="40dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20dp"/>
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonshape"
+                android:text="Search 🔍"/>
+            <Button
+                android:id="@+id/btnSortingCategories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonshape"
+                android:text="Data Sorting"/>
+            <Button
+                android:id="@+id/btnColorBlind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:background="@drawable/buttonshape"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:text="Color Blind Enable"/>
+            <Button
+                android:id="@+id/btnConvertToCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:background="@drawable/buttonshape"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:text="Copy Mode Enable"/>
+            <Button
+                android:id="@+id/btnDatabaseControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonshape"
+                android:text="Database Control"/>
+            <Button
+                android:id="@+id/btnVoiceRecognition"
+                android:layout_width="match_parent"
+                android:background="@drawable/buttonshape"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:text="Voice Recognition"/>
+
+            <Button
+                android:id="@+id/btnAppInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonshape"
+                android:padding="5dp"
+                android:text="App Guide"
+                android:textAllCaps="false"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonshape"
+                android:padding="5dp"
+                android:text="Contact Info"
+                android:textAllCaps="false"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/btnExitMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/buttonshape"
+                android:textAllCaps="false"
+                android:text="Exit"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

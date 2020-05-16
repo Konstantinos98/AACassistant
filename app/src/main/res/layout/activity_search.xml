@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@color/gray"
+    android:id="@+id/searchLayout"
+    tools:context=".Search">
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtSearchTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:text="Search 🔍"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/txtSearchInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@color/light_grey"
+            android:padding="5dp"
+            android:textSize="17dp"
+            android:text="* Click 'Categories' or 'Phrases' button to search through them. Direct to categories or phrases by clicking on the search result row. Return to Main settings with 'Return' button."
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnSearchCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/selectedbuttonshape"
+            android:text="Categories"/>
+        <Button
+            android:id="@+id/btnSearchPhrases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/selectedbuttonshape"
+            android:text="Phrases"/>
+        <Button
+            android:id="@+id/btnSReturnToSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/selectedbuttonshape"
+            android:text="Return"/>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

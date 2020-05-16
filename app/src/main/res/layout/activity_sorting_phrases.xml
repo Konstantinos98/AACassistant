@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@color/gray"
+    android:id="@+id/spLayout"
+    tools:context=".SortingPhrases">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/spTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:text="Phrases Sorting"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/txtSpInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="@color/light_grey"
+        android:padding="5dp"
+        android:textSize="17dp"
+        android:text="* Drag each phrase row and drop it where you want the new position to be. Click the 'Return' button to return at categories soring."
+        android:layout_marginBottom="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="5dp"
+        android:background="@color/white_smoke"
+        android:id="@+id/rvPhrasesSorting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <Button
+        android:id="@+id/btnReturnToCategoriesSorting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:background="@drawable/selectedbuttonshape"
+        android:text="Return"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

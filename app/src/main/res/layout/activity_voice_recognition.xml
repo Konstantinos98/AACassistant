@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/gray"
+    android:id="@+id/vrLayout"
+    tools:context=".VoiceRecognition">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/txtVRTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voice Recognition"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:padding="7dp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:id="@+id/txtVRInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:padding="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:text="* Click the 'Microphone' Button to say the category you want to direct into."/>
+         <ImageView
+                android:id="@+id/imgvVR"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/selectedbuttonshape"
+                android:src="@drawable/ic_keyboard_voice_black_24dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/btnVRReturnToSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/selectedbuttonshape"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
